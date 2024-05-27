@@ -1,0 +1,101 @@
+/* Responsive Styles */
+
+/* For tablets and below */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .match-card, .news-article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .match-card img, .news-article img {
+        width: 100%;
+        height: auto;
+    }
+
+    .match-info, .news-info {
+        padding: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 315px;
+    }
+}
+
+/* For mobile phones and below */
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .header-container {
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container, .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .match-card, .team-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .match-card img, .team-card img {
+        width: 100%;
+    }
+
+    .match-info, .team-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
