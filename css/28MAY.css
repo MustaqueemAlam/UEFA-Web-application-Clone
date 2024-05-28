@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    color: #333;
+}
+
+.box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.box-header {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.box-content {
+    color: #555;
+}
