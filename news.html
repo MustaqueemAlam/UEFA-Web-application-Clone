@@ -4,25 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UEFA News</title>
-    <link rel="stylesheet" href="css/28MAY.css">
+    <link rel="stylesheet" href="css/news.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            text-align: center;
+            background-color: #0056b3;
+            color: white;
+            padding: 1em 0;
+            margin-bottom: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            margin-bottom: 20px;
+        }
+        .navbar a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .box {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .box-header {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        .box-content {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .box button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .box button:hover {
+            background-color: #003f7f;
+        }
+    </style>
 </head>
 <body>
     <h1 class="header">Welcome to UEFA News</h1>
-    <div class="box">
-        <h2 class="box-header">Latest Updates</h2>
-        <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien eu nisl efficitur gravida.</p>
+    <div class="navbar">
+        <a href="#latest-updates">Latest Updates</a>
+        <a href="#match-highlights">Match Highlights</a>
+        <a href="#player-transfers">Player Transfers</a>
+        <a href="#league-standings">League Standings</a>
     </div>
-    <div class="box">
-        <h2 class="box-header">Match Highlights</h2>
-        <p class="box-content">Nulla facilisi. Integer id tellus id ligula suscipit dapibus a in ipsum.</p>
-    </div>
-    <div class="box">
-        <h2 class="box-header">Player Transfers</h2>
-        <p class="box-content">Duis vehicula vitae eros ut malesuada. Nam tincidunt ex nec nulla vestibulum.</p>
-    </div>
-    <div class="box">
-        <h2 class="box-header">League Standings</h2>
-        <p class="box-content">Vestibulum efficitur, nunc sed suscipit vehicula, lectus velit rhoncus mauris, non dictum libero eros vel sapien.</p>
+    <div class="container">
+        <div class="box" id="latest-updates">
+            <h2 class="box-header">Latest Updates</h2>
+            <p class="box-content">Stay updated with the latest news from the world of UEFA. Get insights, articles, and more.</p>
+            <button onclick="window.location.href='https://www.uefa.com/news/';">Read More</button>
+        </div>
+        <div class="box" id="match-highlights">
+            <h2 class="box-header">Match Highlights</h2>
+            <p class="box-content">Watch the latest match highlights and relive the exciting moments from UEFA games.</p>
+            <button onclick="window.location.href='https://www.youtube.com/user/UEFA';">Watch Highlights</button>
+        </div>
+        <div class="box" id="player-transfers">
+            <h2 class="box-header">Player Transfers</h2>
+            <p class="box-content">Keep track of all the latest player transfers and rumors in the UEFA leagues.</p>
+            <button onclick="window.location.href='https://www.uefa.com/uefachampionsleague/transfers/';">View Details</button>
+        </div>
+        <div class="box" id="league-standings">
+            <h2 class="box-header">League Standings</h2>
+            <p class="box-content">Check out the current league standings and see where your favorite teams stand.</p>
+            <button onclick="window.location.href='https://www.uefa.com/uefachampionsleague/standings/';">See Standings</button>
+        </div>
     </div>
 </body>
 </html>
